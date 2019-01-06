@@ -14,9 +14,9 @@ public class AsciiCode{
             for(int i = 0; i < 150; i = i + 10){
                 for(int j = 0; j < 150; j = j + 10){
                     Color color = new Color(img.getRGB(j, i));
-                    asciiCode.add((byte)color.getRed());
-                    asciiCode.add((byte)color.getGreen());
-                    asciiCode.add((byte)color.getBlue());
+                    asciiCode.add((byte)(color.getRed()/2));
+                    asciiCode.add((byte)(color.getGreen()/2));
+                    asciiCode.add((byte)(color.getBlue()/2));
                 }
             }
         } catch (Exception e) {
